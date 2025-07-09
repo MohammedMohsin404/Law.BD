@@ -1,0 +1,376 @@
+[
+  {
+    "id": "l1",
+    "name": "Amina Khatoon",
+    "image": "https://cdn.law.asia/wp-content/uploads/2022/01/Amina-Khatoon-1.png, M&A, taxation, energy",
+    "experience": "23 years",
+    "licenseNumber": "LIC-AM001",
+    "fee": "5000 BDT/hour",
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "contact": "+8801711027377"
+  },
+  {
+    "id": "l2",
+    "name": "Saqeb Mahbub",
+    "image": "https://cdn.law.asia/wp-content/uploads/2022/01/Saqeb-Mahbub-1.png",
+    "speciality": "Arbitration & ADR, corporate, labour & employment",
+    "experience": "11 years",
+    "licenseNumber": "LIC-SA002",
+    "fee": "5200 BDT/hour",
+    "availability": [
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "contact": "+8801725150912"
+  },
+  {
+    "id": "l3",
+    "name": "Shahdeen Malik",
+    "image": "https://law.asia/wp-content/uploads/2022/01/Shahdeen-Malik.png",
+    "speciality": "Corporate & banking, anti\u2011corruption, family law",
+    "experience": "20 years",
+    "licenseNumber": "LIC-SH003",
+    "fee": "5400 BDT/hour",
+    "availability": [
+      "Monday",
+      "Tuesday",
+      "Thursday"
+    ],
+    "contact": "+880247124915"
+  },
+  {
+    "id": "l4",
+    "name": "ABM Hamidul Mishbah",
+    "image": "https://cdn.law.asia/wp-content/uploads/2022/01/Hamidul-Mishbah-1.png",
+    "speciality": "IP, tech, telecom, competition, media",
+    "experience": "19 years",
+    "licenseNumber": "LIC-AB004",
+    "fee": "5600 BDT/hour",
+    "availability": [
+      "Wednesday",
+      "Friday",
+      "Sunday"
+    ],
+    "contact": "+8801911482175"
+  },
+  {
+    "id": "l5",
+    "name": "Khan Khalid Adnan",
+    "image": "https://cdn.law.asia/wp-content/uploads/2022/01/Khan-Khalid-Adnan.png",
+    "speciality": "Arbitration, banking & finance, corporate",
+    "experience": "12 years",
+    "licenseNumber": "LIC-KH005",
+    "fee": "5800 BDT/hour",
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "contact": "+8801730481628"
+  },
+  {
+    "id": "l6",
+    "name": "Shamsud Doulah",
+    "image": "https://cdn.law.asia/wp-content/uploads/2022/01/Shamsud-Doulah-1.png",
+    "speciality": "Corporate & commercial, litigation, IP enforcement",
+    "experience": "30 years",
+    "licenseNumber": "LIC-SH006",
+    "fee": "5000 BDT/hour",
+    "availability": [
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "contact": "+8801713382999"
+  },
+  {
+    "id": "l7",
+    "name": "Wahid Sadiq Khan",
+    "image": "https://cdn.law.asia/wp-content/uploads/2022/01/Wahid-Sadiq-Khan-1.png",
+    "speciality": "Labour & employment; corporate; white\u2011collar crime",
+    "experience": "14 years",
+    "licenseNumber": "LIC-WA007",
+    "fee": "5200 BDT/hour",
+    "availability": [
+      "Monday",
+      "Tuesday",
+      "Thursday"
+    ],
+    "contact": "+8801768054385"
+  },
+  {
+    "id": "l8",
+    "name": "Yousuf Ali",
+    "image": "https://cdn.law.asia/wp-content/uploads/2022/01/Yousuf-Ali-1.png",
+    "speciality": "Corporate; arbitration; tax; litigation; admiralty",
+    "experience": "15 years",
+    "licenseNumber": "LIC-YO008",
+    "fee": "5400 BDT/hour",
+    "availability": [
+      "Wednesday",
+      "Friday",
+      "Sunday"
+    ],
+    "contact": "+8801711595261"
+  },
+  {
+    "id": "l9",
+    "name": "Mydul Haque Khan",
+    "image": "https://cdn.law.asia/wp-content/uploads/2022/01/Mydul-Haque-Khan-1.png",
+    "speciality": "Banking & finance; corporate & commercial",
+    "experience": "15 years",
+    "licenseNumber": "LIC-MY009",
+    "fee": "5600 BDT/hour",
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "contact": "+8801711027377"
+  },
+  {
+    "id": "l10",
+    "name": "Imtiaz Uddin Ahmad Asif",
+    "image": "https://cdn.law.asia/wp-content/uploads/2022/01/Imtiaz-Ahmad-Asif-1.png",
+    "speciality": "Corporate & commercial; M&A; project finance",
+    "experience": "22 years",
+    "licenseNumber": "LIC-IM010",
+    "fee": "5800 BDT/hour",
+    "availability": [
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "contact": "+8801725150912"
+  },
+  {
+    "id": "l11",
+    "name": "Lawyer 11",
+    "image": "https://via.placeholder.com/150?text=Lawyer+11",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "11 years",
+    "licenseNumber": "LIC-LW-011",
+    "fee": "6500 BDT/hour",
+    "availability": [
+      "Wednesday",
+      "Friday",
+      "Sunday"
+    ],
+    "contact": "+8801700000011"
+  },
+  {
+    "id": "l12",
+    "name": "Lawyer 12",
+    "image": "https://via.placeholder.com/150?text=Lawyer+12",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "12 years",
+    "licenseNumber": "LIC-LW-012",
+    "fee": "5000 BDT/hour",
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "contact": "+8801700000012"
+  },
+  {
+    "id": "l13",
+    "name": "Lawyer 13",
+    "image": "https://via.placeholder.com/150?text=Lawyer+13",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "13 years",
+    "licenseNumber": "LIC-LW-013",
+    "fee": "5300 BDT/hour",
+    "availability": [
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "contact": "+8801700000013"
+  },
+  {
+    "id": "l14",
+    "name": "Lawyer 14",
+    "image": "https://via.placeholder.com/150?text=Lawyer+14",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "14 years",
+    "licenseNumber": "LIC-LW-014",
+    "fee": "5600 BDT/hour",
+    "availability": [
+      "Monday",
+      "Tuesday",
+      "Thursday"
+    ],
+    "contact": "+8801700000014"
+  },
+  {
+    "id": "l15",
+    "name": "Lawyer 15",
+    "image": "https://via.placeholder.com/150?text=Lawyer+15",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "15 years",
+    "licenseNumber": "LIC-LW-015",
+    "fee": "5900 BDT/hour",
+    "availability": [
+      "Wednesday",
+      "Friday",
+      "Sunday"
+    ],
+    "contact": "+8801700000015"
+  },
+  {
+    "id": "l16",
+    "name": "Lawyer 16",
+    "image": "https://via.placeholder.com/150?text=Lawyer+16",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "16 years",
+    "licenseNumber": "LIC-LW-016",
+    "fee": "6200 BDT/hour",
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "contact": "+8801700000016"
+  },
+  {
+    "id": "l17",
+    "name": "Lawyer 17",
+    "image": "https://via.placeholder.com/150?text=Lawyer+17",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "17 years",
+    "licenseNumber": "LIC-LW-017",
+    "fee": "6500 BDT/hour",
+    "availability": [
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "contact": "+8801700000017"
+  },
+  {
+    "id": "l18",
+    "name": "Lawyer 18",
+    "image": "https://via.placeholder.com/150?text=Lawyer+18",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "18 years",
+    "licenseNumber": "LIC-LW-018",
+    "fee": "5000 BDT/hour",
+    "availability": [
+      "Monday",
+      "Tuesday",
+      "Thursday"
+    ],
+    "contact": "+8801700000018"
+  },
+  {
+    "id": "l19",
+    "name": "Lawyer 19",
+    "image": "https://via.placeholder.com/150?text=Lawyer+19",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "19 years",
+    "licenseNumber": "LIC-LW-019",
+    "fee": "5300 BDT/hour",
+    "availability": [
+      "Wednesday",
+      "Friday",
+      "Sunday"
+    ],
+    "contact": "+8801700000019"
+  },
+  {
+    "id": "l20",
+    "name": "Lawyer 20",
+    "image": "https://via.placeholder.com/150?text=Lawyer+20",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "10 years",
+    "licenseNumber": "LIC-LW-020",
+    "fee": "5600 BDT/hour",
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "contact": "+8801700000020"
+  },
+  {
+    "id": "l21",
+    "name": "Lawyer 21",
+    "image": "https://via.placeholder.com/150?text=Lawyer+21",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "11 years",
+    "licenseNumber": "LIC-LW-021",
+    "fee": "5900 BDT/hour",
+    "availability": [
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "contact": "+8801700000021"
+  },
+  {
+    "id": "l22",
+    "name": "Lawyer 22",
+    "image": "https://via.placeholder.com/150?text=Lawyer+22",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "12 years",
+    "licenseNumber": "LIC-LW-022",
+    "fee": "6200 BDT/hour",
+    "availability": [
+      "Monday",
+      "Tuesday",
+      "Thursday"
+    ],
+    "contact": "+8801700000022"
+  },
+  {
+    "id": "l23",
+    "name": "Lawyer 23",
+    "image": "https://via.placeholder.com/150?text=Lawyer+23",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "13 years",
+    "licenseNumber": "LIC-LW-023",
+    "fee": "6500 BDT/hour",
+    "availability": [
+      "Wednesday",
+      "Friday",
+      "Sunday"
+    ],
+    "contact": "+8801700000023"
+  },
+  {
+    "id": "l24",
+    "name": "Lawyer 24",
+    "image": "https://via.placeholder.com/150?text=Lawyer+24",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "14 years",
+    "licenseNumber": "LIC-LW-024",
+    "fee": "5000 BDT/hour",
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "contact": "+8801700000024"
+  },
+  {
+    "id": "l25",
+    "name": "Lawyer 25",
+    "image": "https://via.placeholder.com/150?text=Lawyer+25",
+    "speciality": "Civil, Criminal & Family Law",
+    "experience": "15 years",
+    "licenseNumber": "LIC-LW-025",
+    "fee": "5300 BDT/hour",
+    "availability": [
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "contact": "+8801700000025"
+  }
+]
