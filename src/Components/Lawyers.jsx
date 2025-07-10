@@ -1,35 +1,60 @@
-import React, { useEffect } from "react";
-
-import { Link } from "react-router";
-import { useState } from "react";
+import { useLoaderData, useNavigation } from "react-router";
+import { useEffect, useState } from "react";
 import SingleLawyer from "./SingleLawyer";
 
-const Lawyers = ({ data }) => {
-  const [lawyers, setLawyers] = useState([]);
+const Lawyers = () => {
+  const data = useLoaderData();
+  const navigation = useNavigation();
+  const [showAll, setShowAll] = useState(false);
+  const [loading, setLoading] = useState(true);
 
+  // Show at least 2 seconds loading
   useEffect(() => {
-    if (Array.isArray(data)) {
-      setLawyers(data);
+    if (navigation.state === "loading") {
+      setLoading(true);
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    } else {
+      // If data loads fast, still show for 2 seconds
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+      return () => clearTimeout(timer);
     }
-  }, [data]);
+  }, [navigation.state]);
 
-  console.log("lawyers", lawyers);
+  const visibleLawyers = showAll ? data : data.slice(0, 6);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <span className="loading loading-spinner text-primary text-4xl"></span>
+      </div>
+    );
+  }
 
   return (
-    <section className="mt-[100px]">
-      <h2 className="text-4xl  text-center font-bold text-[#0F0F0F]">
-        We Provide Best Law Services
-      </h2>
-      <p className="text-center mt-8 ">
-        Our platform connects you with verified, experienced Lawyers across
-        various specialities — all at your convenience.
-      </p>
+    <section className="mt-16">
+      <h2 className="text-4xl text-center font-bold">Our Lawyers</h2>
 
-      <div className="mt-[75px] grid grid-cols-1 lg:grid-cols-2 gap-16">
-        {lawyers.map((lawyer, i) => (
-          <SingleLawyer key={i} lawyer={lawyer} />
+      <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {visibleLawyers.map((lawyer, index) => (
+          <SingleLawyer key={index} lawyer={lawyer} />
         ))}
       </div>
+
+      {data.length > 6 && (
+        <div className="text-center mt-6">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+          >
+            {showAll ? "Show Less" : "Show More"}
+          </button>
+        </div>
+      )}
     </section>
   );
 };

@@ -31,7 +31,7 @@ const ImageWithFallback = ({ src, alt, className }) => {
 };
 
 const SingleLawyer = ({ lawyer }) => {
-  const { image, name, licenseNumber, experience, speciality } = lawyer;
+  const { id, image, name, licenseNumber, experience, speciality } = lawyer;
 
   return (
     <div className="flex border border-[#0f0f0f41] p-6">
@@ -49,7 +49,7 @@ const SingleLawyer = ({ lawyer }) => {
           <img className="w-5 h-5 mr-1" src={R} alt="License" />
           License No: {licenseNumber}
         </span>
-        <Link className="text-[#176AE5]">View Details</Link>
+        <Link to={`${id}`} className="text-[#176AE5]">View Details</Link>
       </div>
     </div>
   );
