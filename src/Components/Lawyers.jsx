@@ -2,6 +2,7 @@ import { useLoaderData, useNavigation } from "react-router";
 import { useEffect, useState } from "react";
 import SingleLawyer from "./SingleLawyer";
 
+
 const Lawyers = () => {
   const data = useLoaderData();
   const navigation = useNavigation();
@@ -14,13 +15,13 @@ const Lawyers = () => {
       setLoading(true);
       const timer = setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 1000);
       return () => clearTimeout(timer);
     } else {
       // If data loads fast, still show for 2 seconds
       const timer = setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 100);
       return () => clearTimeout(timer);
     }
   }, [navigation.state]);
@@ -35,8 +36,11 @@ const Lawyers = () => {
     );
   }
 
+ 
+
   return (
     <section className="mt-16">
+       
       <h2 className="text-4xl text-center font-bold">Our Lawyers</h2>
 
       <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">

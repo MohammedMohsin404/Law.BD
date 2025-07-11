@@ -1,6 +1,7 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router"; // ✅ Fixed wrong import
 import R from "../assets/r.png";
+
 
 // Reusable Image with fallback support
 const ImageWithFallback = ({ src, alt, className }) => {
@@ -17,6 +18,9 @@ const ImageWithFallback = ({ src, alt, className }) => {
   const handleError = () => {
     setImgSrc(fallback);
   };
+   useEffect(() => {
+          document.title="Our Lawyers | Qanun.BD"
+      }, []);
 
   return (
     <img
@@ -31,16 +35,21 @@ const ImageWithFallback = ({ src, alt, className }) => {
 };
 
 const SingleLawyer = ({ lawyer }) => {
-  const { id, image, name, licenseNumber, experience, speciality } = lawyer;
+  const { id, image, name, licenseNumber, experience, speciality, availability } = lawyer;
+  const today = new Date();
+  const today_day = today.toLocaleDateString("en-US", { weekday: "long" });
 
+  const isToday_dayInArray = availability.includes(today_day);
   return (
-    <div className="flex border border-[#0f0f0f41] p-6">
+    <div className="flex border border-[#0f0f0f41] p-6 ">
+    
+    
       {/* ✅ Use the fallback image component */}
       <ImageWithFallback className="w-32 h-32 object-cover" src={image} alt={name} />
 
       <div className="ml-16 space-y-2">
         <div className="flex space-x-8">
-          <p className="text-[#09982F]">Available</p>
+          {isToday_dayInArray?<p className="text-[#09982F]">Available</p>:<p className="text-red-600">Unavailable</p>}
           <p className="text-[#176AE5]">{experience}</p>
         </div>
         <h3 className="text-2xl font-bold">{name}</h3>
@@ -49,7 +58,7 @@ const SingleLawyer = ({ lawyer }) => {
           <img className="w-5 h-5 mr-1" src={R} alt="License" />
           License No: {licenseNumber}
         </span>
-        <Link to={`${id}`} className="text-[#176AE5]">View Details</Link>
+         <Link to={`/lawyer/${id}`} className="text-[#176AE5]">View Details</Link>
       </div>
     </div>
   );

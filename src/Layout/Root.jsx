@@ -1,10 +1,16 @@
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { ToastContainer } from "react-toastify";
+
+
 
 const Root = () => {
-  //   const { pathname } = useLocation();
-  //   const hideFooter = pathname === '/404';
+  const location = useLocation();
+
+  // Check if we are on an error route (can use pathname or a global flag)
+  const hideFooter = location.pathname === "/error"; // You can change condition as needed
+
 
   return (
     <>
@@ -12,9 +18,13 @@ const Root = () => {
         <Navbar />
       </header>
       <main className=" container mx-auto">
+          <ToastContainer  />
+           
         <Outlet />
       </main>
-      <footer className="mt-[100px]"><Footer/></footer>
+      <footer className="mt-[100px]">
+         {!hideFooter && <Footer />} {/* Conditionally hide footer */}
+      </footer>
       {/* {!hideFooter && <Footer />} */}
     </>
   );

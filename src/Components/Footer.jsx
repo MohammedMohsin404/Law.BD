@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="pt-[100px] flex flex-col justify-center items-center space-y-20">
           <Link className="btn btn-ghost text-3xl text-[#ffffff]">
             {" "}
-            <img src={logo} alt="" /> Law.BD
+            <img src={logo} alt="" /> Qanun.BD
           </Link>
           <ul className="menu menu-horizontal text-[#ffffffb0]  px-1">
             <li>
