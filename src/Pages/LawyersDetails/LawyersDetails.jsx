@@ -77,7 +77,7 @@ const LawyersDetails = () => {
         various specialties — all at your convenience.
       </p>
 
-      <div className="flex  p-6 mt-24 items-center">
+      <div className="flex flex-col md:flex-row p-6 mt-24 items-center">
         {/* ✅ Use the fallback image component */}
         <ImageWithFallback
           className="w-64 h-64 object-cover"

@@ -78,4 +78,99 @@ Educational React content for beginners:
 
 ## 🛠️ Tech Stack
 
-- **React 19 +**
+- **React 19 + Vite**
+- **React Router 7**
+- **Tailwind CSS**
+- **Recharts**
+- **React Toastify**
+- **React Helmet Async**
+- **LocalStorage API**
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+├── Components/
+│   ├── Loader.jsx
+│   ├── Appointments.jsx
+│   └── ...
+├── Layout/
+│   └── Root.jsx
+├── Pages/
+│   ├── Home/
+│   ├── Bookings/
+│   ├── NotFound/
+│   └── LawyersDetails/
+├── Utilities/
+│   └── localstorage.js
+├── routes.jsx
+└── main.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/qanun-bd.git
+cd qanun-bd
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run Locally
+
+```bash
+npm run dev
+```
+
+### 4. Build for Production
+
+```bash
+npm run build
+```
+
+### 5. Deploy to Surge
+
+```bash
+npm install --global surge
+npm run build
+cd dist
+surge
+```
+
+Then provide your preferred domain name (e.g., `qanun-bd.surge.sh`).
+
+---
+
+## 🔐 Environment Setup
+
+No environment variables required. All data is fetched locally from JSON files.
+
+---
+
+## 📦 Data Source
+
+- `top_lawyers.json` contains mock lawyer data.
+- Used in `loader()` to simulate backend response.
+
+---
+
+## ✨ Credits
+
+Designed & Developed by **Mohammed Mohsin**  
+Location: Narayanganj, Dhaka, Bangladesh
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).

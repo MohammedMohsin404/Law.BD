@@ -12,7 +12,7 @@ const Banner = () => {
       <div className="hero-overlay rounded-3xl opacity-10"></div>
       <div className="hero-content text-neutral-content text-center">
         <div className="space-y-8">
-          <h1 className=" text-5xl font-bold font leading-[1.5] ">
+          <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold font leading-[1.5] ">
             It avoids subjective claims or <br /> exaggeration that might raise
             red <br /> flags legally
           </h1>
