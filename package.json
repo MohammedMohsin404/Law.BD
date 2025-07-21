@@ -5,15 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-   
     "build": "vite build && cp dist/index.html dist/200.html",
-     "deploy": "npm run build && surge ./dist --domain qanun-bd.surge.sh",
+    "deploy": "npm run build && surge ./dist --domain qanun-bd.surge.sh",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "daisyui": "^5.0.46",
+    "firebase": "^11.10.0",
     "react": "^19.1.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",
