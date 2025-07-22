@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { ToastContainer } from "react-toastify";
+import ScrollToTop from "../Components/ScrollToTop";
 
 
 
@@ -14,6 +15,7 @@ const Root = () => {
 
   return (
     <>
+      <ScrollToTop />
       <header className=" container mx-auto">
         <Navbar />
       </header>

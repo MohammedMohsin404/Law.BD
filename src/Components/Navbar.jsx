@@ -1,4 +1,4 @@
-import { Link, Navigate, NavLink } from "react-router";
+import { Link, Navigate, NavLink, useNavigate } from "react-router";
 import logo from "../assets/logo.png";
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
@@ -6,14 +6,22 @@ import toast from "daisyui/components/toast";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
-const handleLogout = () => {
-  logOut()
-    .then(() => {
-      Navigate("/");
-      toast.success(` ${user.displayName}, Your Logged Out Successfully`);
-    })
-    .catch(err => console.log(err));
-};
+  const navigate = useNavigate();
+
+  const from = location.state?.from?.pathname || "/";
+
+  const handleLogout = () => {
+    logOut()
+      .then(() => {
+        Navigate("/");
+        setTimeout(() => {
+          toast.error(` ${user.displayName}, You Are Logged Out Successfully`);
+          navigate(from, { replace: true });
+        }, 200);
+      })
+      .catch((err) => err);
+  };
+  console.log(user);
 
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -76,8 +84,28 @@ const handleLogout = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-4">
-         <h3 className="text-xl font-bold ">{user && (user.displayName || user.email)}</h3>
-        {user ?(
+        {user &&
+          (user.photoURL ? (
+            <div className="avatar">
+              <div className="w-12 rounded-full">
+                <img src={user.photoURL} />
+              </div>
+            </div>
+          ) : (
+            <div className="avatar avatar-placeholder">
+              <div className="bg-neutral text-neutral-content w-12 rounded-full">
+                <span className="text-xl">
+                  {" "}
+                  {user && user.displayName.charAt(0).toUpperCase()}
+                </span>
+              </div>
+            </div>
+          ))}
+
+        <h3 className="text-xl font-bold ">
+          {user && (user.displayName || user.email)}
+        </h3>
+        {user ? (
           <Link
             onClick={handleLogout}
             className="btn text-white bg-[#0EA106] rounded-3xl text-xl p-6"
@@ -92,8 +120,6 @@ const handleLogout = () => {
             Login
           </Link>
         )}
-
-       
       </div>
     </div>
   );

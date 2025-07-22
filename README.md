@@ -2,7 +2,7 @@
 
 A modern, responsive, and interactive web app to help users find verified lawyers and book appointments with ease.
 
-🔗 Live Preview: [http://qanun-bd.surge.sh](http://qanun-bd.surge.sh)
+🔗 Live Preview: [https://qanun-bd.web.app/]([http://qanun-bd.surge.sh)](https://qanun-bd.web.app/)
 
 ---
 

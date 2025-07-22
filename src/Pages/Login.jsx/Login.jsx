@@ -4,7 +4,7 @@ import { AuthContext } from "../../provider/AuthProvider";
 import { toast } from "react-toastify";
 
 const Login = () => {
-  const { loginUser,user ,signInWithGoogle} = useContext(AuthContext);
+  const { loginUser, signInWithGoogle } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
@@ -18,16 +18,21 @@ const Login = () => {
     try {
       await loginUser(email, password);
       navigate(from, { replace: true }); // 🔁 redirect to previous page
-       toast.success(` You Loged In Successfully ${user.displayName}`);
+      setTimeout(() => {
+        toast.success(
+          `You Logged In Successfully`
+        );
+        navigate(from, { replace: true });
+      }, 200); // Small delay to let context update
     } catch (err) {
-      console.log(err.message);
+      err.message;
     }
   };
 
-    const handleGoogleLogin = () => {
+  const handleGoogleLogin = () => {
     signInWithGoogle()
       .then(() => navigate(from, { replace: true }))
-      .catch((err) => console.log(err.message));
+      .catch((err) => err.message);
   };
 
   return (
@@ -62,7 +67,10 @@ const Login = () => {
 
         <div className="text-center mt-4">
           <p className="text-gray-600">Or</p>
-          <button onClick={handleGoogleLogin} className="mt-2 w-full border border-gray-300 py-2 rounded-md hover:bg-gray-100">
+          <button
+            onClick={handleGoogleLogin}
+            className="mt-2 w-full border border-gray-300 py-2 rounded-md hover:bg-gray-100"
+          >
             Continue with Google
           </button>
         </div>

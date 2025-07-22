@@ -3,7 +3,7 @@ import { Link, useRouteError } from "react-router";
 
 const NotFound = () => {
   const error = useRouteError();
-  console.error(error);
+  
 
   useEffect(() => {
     document.title = `404 - Page Not Found | Qanun.BD`;

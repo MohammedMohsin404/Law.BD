@@ -18,7 +18,7 @@ import Signup from "./Pages/Signup/Signup";
 import PrivateRoute from "./PrivateRoute";
 
 
-// ✅ Load top lawyers
+// Load top lawyers
 const lawyers = async () => {
   const res = await fetch("/top_lawyers.json");
   const data = await res.json();

@@ -15,7 +15,7 @@ export const setItemToStorage = (id, name) => {
   const storedList = getItemToStorage();
 
   if (storedList.includes(id)) {
-    console.log(id, "stored");
+  
     toast.error(`You already booked ${name}`);
   } else {
     storedList.push(id);
@@ -31,7 +31,7 @@ export const removeItemFromStorage = (id, name) => {
   const storedList = getItemToStorage();
 
   storedList.pop(id);
-  console.log(storedList);
+
   const storedListStr = JSON.stringify(storedList);
   localStorage.setItem("appointment-list", storedListStr);
 

@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 const Signup = () => {
 
     // const provider = new GoogleAuthProvider();
-
+const from = location.state?.from?.pathname || "/";
   const { createNewUser, setUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -26,16 +26,20 @@ const Signup = () => {
       const user = res.user;
          
 
-      // ✅ Set the user's display name
+      // Set the user's display name
       await updateProfile(user, {
         displayName: name,
       });
 
       setUser({ ...user, displayName: name }); // optional: set locally with name
-       toast.success(` Congratulation ${user.displayName}, Your Account Has been Created`);
-      navigate("/bookings");
+       navigate(from, { replace: true });
+        setTimeout(() => {
+        toast.success(` Congratulation, Your Account Has been Created`);
+        navigate(from, { replace: true });
+      }, 200); // Small delay to let context update
+     
     } catch (err) {
-      console.log(err.code, err.message);
+      err.code, err.message;
     }
   };
 
